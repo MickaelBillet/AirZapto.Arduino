@@ -31,7 +31,7 @@ void webSocketEvent(WStype_t type, uint8_t * payload, size_t length)
     case WStype_CONNECTED:
     {
       Serial.printf("[WSc] Connected to url: %s\n", payload);      
-      ArduinoSystem.WebSocketConnection(&WebSocket);      
+      ArduinoSystem.WebSocketConnection();      
       break;
     }
     case WStype_TEXT:
